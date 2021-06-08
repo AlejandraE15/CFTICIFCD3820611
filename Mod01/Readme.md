@@ -1,11 +1,11 @@
 # Lab 01: Building a web application on Azure platform as a service offerings
 
 ## Architecture:
-
+![architecture_01](ZZ-lab/architecture_01.png)
 
 
 **Resultado de la creación de los App Service Web y Api: **
-
+![Lab0100](ZZ-lab/Lab0100.png)
 
 **Connection String to storage account:**
 
@@ -20,10 +20,10 @@ http://imgapigeoconda.azurewebsites.net/
 ```
 
 **Configuracion de la API Web**
-
+![Lab0102](ZZ-lab/Lab0102.png)
 
 **Configuración de la Web App**
-
+![Lab0103](ZZ-lab/Lab0103.png)
 
 **Código Az-CLI para desplegar el api rest**
 
@@ -39,6 +39,7 @@ az webapp deployment source config-zip --resource-group ManagedPlatform --src we
 
 
 **Comprobación que las web api funcione correctamente **
-
+![Lab0104](ZZ-lab/Lab0104.png)
 
 **Comprobación que la web app funcione correctamente **
+![Lab0105](ZZ-lab/Lab0105.png)
