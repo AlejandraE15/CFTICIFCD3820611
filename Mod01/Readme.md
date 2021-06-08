@@ -43,3 +43,9 @@ az webapp deployment source config-zip --resource-group ManagedPlatform --src we
 
 ## Comprobación que la web app funcione correctamente.
 ![Lab0105](ZZ-lab/Lab0105.png)
+
+### URL WEB APP:
+
+```
+https://imgwebgeoconda.azurewebsites.net/
+```
