@@ -63,6 +63,9 @@ namespace func
 
 ![Lab0209](ZZ-lab/Lab0209.png)
 
+### Crear una función que se integre con otros servicios.
 
-
-
+*Subir un archivo en un contenedor nuevo llamado content, dentro de mi funcstorgeoconda*
+![Lab0210](ZZ-lab/Lab0210.png)
+*Crear una HTTP-triggered function.
+![Lab0211](ZZ-lab/Lab0211.png)
