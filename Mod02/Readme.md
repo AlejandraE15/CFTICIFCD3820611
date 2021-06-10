@@ -78,3 +78,8 @@ namespace func
 ![Lab0214](ZZ-lab/Lab0214.png)
 *código httprepl*
 ![Lab0215](ZZ-lab/Lab0215.png)
+*Publish the function app project*
+![Lab0216](ZZ-lab/Lab0216.png)
+### Validate deployment
+![Lab0217](ZZ-lab/Lab0217.png)
+![Lab0218](ZZ-lab/Lab0218.png)
