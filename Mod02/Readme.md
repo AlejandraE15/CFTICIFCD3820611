@@ -82,4 +82,5 @@ namespace func
 ![Lab0216](ZZ-lab/Lab0216.png)
 ### Validate deployment
 ![Lab0217](ZZ-lab/Lab0217.png)
-![Lab0218](ZZ-lab/Lab0218.png)
+![Lab02018](ZZ-lab/Lab02018.png)
+
