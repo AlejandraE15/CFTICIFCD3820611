@@ -4,7 +4,7 @@
 ![architecture_01](ZZ-lab/architecture_02.png)
 
 
-### Crear una Store Account. 
+### Crear una Store Account dentro de un Resource Group llamado Serverless. 
 ![Lab0200](ZZ-lab/Lab0200.png)
 
 ### Crear una Function App. 
@@ -17,7 +17,7 @@ DefaultEndpointsProtocol=https;AccountName=funcstorgeoconda;AccountKey=2Y+fcKbyC
 
 
 ### Configure local Azure Functions project.
-![Lab0103](ZZ-lab/Lab0103.png)
+![Lab0203](ZZ-lab/Lab0203.png)
 
 
 ```
