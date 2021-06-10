@@ -34,5 +34,6 @@ DefaultEndpointsProtocol=https;AccountName=funcstorgeoconda;AccountKey=2Y+fcKbyC
 ![Lab0204](ZZ-lab/Lab0204.png)
 ### Escribir un HTTP-triggered function code
 ![Lab0205](ZZ-lab/Lab0205.png)
-### Test the HTTP-triggered function by using httprepl
 ![Lab0206](ZZ-lab/Lab0206.png)
+### Test the HTTP-triggered function by using httprepl
+
