@@ -40,3 +40,29 @@ DefaultEndpointsProtocol=https;AccountName=funcstorgeoconda;AccountKey=2Y+fcKbyC
 ![Lab0207](ZZ-lab/Lab0207.png)
 ### Create a function that triggers on a schedule
 ![Lab0208](ZZ-lab/Lab0208.png)
+
+*Codigo usado para la task 4: Update the function integration configuration*
+```
+using System;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Host;
+using Microsoft.Extensions.Logging;
+
+namespace func
+{
+    public static class Recurring
+    {
+         [FunctionName("Recurring")]
+         public static void Run([TimerTrigger("*/30 * * * * *")]TimerInfo myTimer, ILogger log)
+        {
+            log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
+        }
+    }
+}
+```
+
+![Lab0209](ZZ-lab/Lab0209.png)
+
+
+
+
