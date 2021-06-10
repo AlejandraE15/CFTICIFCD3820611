@@ -76,4 +76,5 @@ namespace func
 
 *Test de la funcion usando httprepl*
 ![Lab0214](ZZ-lab/Lab0214.png)
+*código httprepl*
 ![Lab0215](ZZ-lab/Lab0215.png)
