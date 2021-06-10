@@ -19,7 +19,7 @@ DefaultEndpointsProtocol=https;AccountName=funcstorgeoconda;AccountKey=2Y+fcKbyC
 ### Configure local Azure Functions project.
 ![Lab0203](ZZ-lab/Lab0203.png)
 
-
+*Codigo usado par configurar la cadena de conexión*
 ```
 {
     "IsEncrypted": false,
