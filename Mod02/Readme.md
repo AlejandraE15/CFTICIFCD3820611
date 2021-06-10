@@ -72,4 +72,8 @@ namespace func
 *Escribri una HTTP-triggered a blob-inputted function code*
 ![Lab0212](ZZ-lab/Lab0212.png)
 *Registrar extensiones de blob de Azure Storage*
+![Lab0213](ZZ-lab/Lab0213.png)
 
+*Test de la funcion usando httprepl*
+![Lab0214](ZZ-lab/Lab0214.png)
+![Lab0215](ZZ-lab/Lab0215.png)
