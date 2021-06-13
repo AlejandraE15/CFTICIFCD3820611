@@ -32,7 +32,8 @@ https://polystorgeoconda.blob.core.windows.net/
 ![Lab0408](ZZ-lab/Lab0408.png)
 * Connection strings
  
-``` Server=tcp:polysqlsrvrgeoconda.database.windows.net,1433;Initial Catalog=AdventureWorks;Persist Security Info=False;User ID=testuser;Password=TestPa55w.rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+``` 
+Server=tcp:polysqlsrvrgeoconda.database.windows.net,1433;Initial Catalog=AdventureWorks;Persist Security Info=False;User ID=testuser;Password=TestPa55w.rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
 * Compruebo que en database haya lops archivos
 ![Lab0409](ZZ-lab/Lab0409.png)
