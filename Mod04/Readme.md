@@ -5,7 +5,7 @@
 ## Exercise 1: Creating database resources in Azure
 ![Lab0401](ZZ-lab/Lab0401.png)
 ![Lab0402](ZZ-lab/Lab0402.png)
-![Lab0403](ZZ-lab/La0403.png)
+
 
 * PRIMARY CONNECTION STRING *
 ```
@@ -14,4 +14,4 @@ AccountEndpoint=https://polycosmosgeoconda.documents.azure.com:443/;AccountKey=s
 ```
 
 ## Exercise 2: Import and validate data
-
+![Lab0403](ZZ-lab/La0403.png)
