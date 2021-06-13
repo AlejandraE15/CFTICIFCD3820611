@@ -44,3 +44,5 @@ Server=tcp:polysqlsrvrgeoconda.database.windows.net,1433;Initial Catalog=Adventu
 ![Lab0411](ZZ-lab/Lab0411.png)
 * Abrimos en Visual Studio Code la carpeta que en mi caso es (C):\Allfiles\Labs\04\Starter\AdventureWorks y modificamos el codigo usando el Connection Strings y el Blob Container Url que antes guardamos.
 ![Lab0414](ZZ-lab/Lab0414.png)
+* Validar la aplicación web.
+![Lab0413](ZZ-lab/Lab0413.png)
