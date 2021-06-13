@@ -20,7 +20,7 @@ AccountEndpoint=https://polycosmosgeoconda.documents.azure.com:443/;AccountKey=s
 ![Lab0404](ZZ-lab/Lab0404.png)
 * En mi contenedor llamado images copio el Blob Servive que esta en Endpoints 
 ```
-https://polystorgeoconda.blob.core.windows.net/
+https://polystorgeoconda.blob.core.windows.net/images
 ```
 * Subo todas la imagenes que tengo en mi carpeta  C:Allfiles\Labs\04\Starter\Images 
 ![Lab0405](ZZ-lab/Lab0405.png)
