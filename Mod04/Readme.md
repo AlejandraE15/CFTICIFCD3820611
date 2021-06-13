@@ -7,11 +7,30 @@
 ![Lab0402](ZZ-lab/Lab0402.png)
 
 
-* PRIMARY CONNECTION STRING *
+* PRIMARY CONNECTION STRING 
 ```
 AccountEndpoint=https://polycosmosgeoconda.documents.azure.com:443/;AccountKey=sSvRzn4bej1NtJaviUgkMqQbZBNohJDeN5nKm1lafGW5Qd1JKxwMqEx1y4RhtYWKwfaffMRGqG8F358l7bKeOA==;
 
 ```
 
 ## Exercise 2: Import and validate data
+* Entro a mi polystorgeoconda a traves de de mi resource groups llamado PolygotData 
 ![Lab0403](ZZ-lab/La0403.png)
+* Ceo 2 contenedores llamados "images" y "databases"
+![Lab0404](ZZ-lab/Lab0404.png)
+* En mi contenedor llamado images copio el Blob Servive que esta en Endpoints 
+```
+https://polystorgeoconda.blob.core.windows.net/
+```
+* Subo todas la imagenes que tengo en mi carpeta  C:Allfiles\Labs\04\Starter\Images 
+![Lab0405](ZZ-lab/Lab0405.png)
+* En el contenedor llamado databases subo el arrchivo AdventureWorks.bacpac que esta en mi C: Allfiles\Labs\04\Starter 
+![Lab0406](ZZ-lab/LAb0406.png)
+* En este paso he importado la database que teniamos en el contenedor "databases"  
+![Lab0407](ZZ-lab/Lab0407.png)
+* Dentro de mi  polysqlsrvrgeoconda. selecciono la casilla de "Firewalls and virtual networks" y elijo "Add client IP"
+![Lab0408](ZZ-lab/Lab0408.png)
+* Dentro de la database que he creado guardo mi connection strings
+ 
+``` Server=tcp:polysqlsrvrgeoconda.database.windows.net,1433;Initial Catalog=AdventureWorks;Persist Security Info=False;User ID=testuser;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+```
