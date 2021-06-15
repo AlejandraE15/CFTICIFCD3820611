@@ -3,7 +3,7 @@
 ![Architecture_4.png](ZZ-lab/Architecture_4.png)
 
 ## Exercise 1: Creating database resources in Azure
-![Lab0401](ZZ-lab/Lab0401    .png)
+![Lab0401](ZZ-lab/Lab0401.png)
 ![Lab0402](ZZ-lab/Lab0402.png)
 
 
