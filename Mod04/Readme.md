@@ -9,7 +9,7 @@
 
 * PRIMARY CONNECTION STRING 
 ```
-AccountEndpoint=https://polycosmosgeoconda.documents.azure.com:443/;AccountKey=sSvRzn4bej1NtJaviUgkMqQbZBNohJDeN5nKm1lafGW5Qd1JKxwMqEx1y4RhtYWKwfaffMRGqG8F358l7bKeOA==;
+AccountEndpoint=https://polycosmosgeoconda.documents.azure.com:443/;AccountKey=TMmDFaG7IUNzbK2UJ4W7jNDv3cPZVtPOQGpRw3hPalVlkic8QWI7tH0VBbqT58UOaUYXNBT5uhFyHkJU4V40Yw==;
 
 ```
 
