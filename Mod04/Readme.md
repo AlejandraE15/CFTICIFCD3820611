@@ -48,3 +48,8 @@ Server=tcp:polysqlsrvrgeoconda.database.windows.net,1433;Initial Catalog=Adventu
 * Validar la aplicación web.
 ![Lab0413](ZZ-lab/Lab0413.png)
 ![Lab0415](ZZ-lab/Lab0415.png)
+
+## Pasamos la página de local a una App Service.
+![Lab0416](ZZ-lab/Lab0416.png)
+![Lab0417](ZZ-lab/Lab0417.png)
+![Lab0418](ZZ-lab/Lab0418.png)
