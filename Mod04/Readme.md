@@ -58,3 +58,8 @@ Server=tcp:polysqlsrvrgeoconda.database.windows.net,1433;Initial Catalog=Adventu
 ```
 https://polywebgeoconda.azurewebsites.net/
 ```
+
+## Exercise 4: Migrating SQL data to Azure Cosmos DB
+
+* Crear un migration project
+![Lab0419](ZZ-lab/Lab0419.png)
