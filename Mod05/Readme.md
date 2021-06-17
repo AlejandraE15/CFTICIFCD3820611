@@ -6,7 +6,7 @@
 * Usando los comandos de Azure CLI para crear una maquina virtual. 
 ![Lab0500](ZZ-lab/Lab0500.png)
 
-## Create a Docker container image and deploy it to Azure Container Registry
+## Exercise 2: Create a Docker container image and deploy it to Azure Container Registry
 
 * Dentro de ~/clouddrive directory creamos un nuevo directorio llamado ipcheck, en el cual crearemos una nueva consola llamada ipcheck.
 ![Lab0501](ZZ-lab/Lab0501.png)
@@ -25,4 +25,22 @@
 
 * Abrir Azure Cloud Shell and store Container Registry metadata
 ![Lab0505](ZZ-lab/Lab0505.png)
+![Lab0506](ZZ-lab/Lab0506.png)
+![Lab0507](ZZ-lab/Lab0507.png)
+
+* Validar mi contenedor de imagen en Container Registry
+![Lab0508](ZZ-lab/Lab0508.png)
+
+## Exercise 3: Deploy an Azure container instance
+
+* Enable the admin user in Container Registry
+![Lab0509](ZZ-lab/Lab0509.png)
+
+* Creo un Container instance
+![Lab0510](ZZ-lab/Lab0510.png)
+
+* Dentro de la seccion "Containers" buscamos Events y luyego Logs, confirmamos que dentro esta nuestra IP Adresses.
+![Lab0511](ZZ-lab/Lab0511.png)
+
+
 
