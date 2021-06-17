@@ -1,3 +1,6 @@
+# Lab: Implementación de procesos de cargas de trabajo mediante el uso de imágenes y contenedores
+Arquitectura: 
+![Architecture_05](ZZ-lab/Architecture_05.png)
 
 # Exercise 1: Create a VM by using the Azure Command-Line Interface (CLI)
 * Creamos un grupo de recursos.
