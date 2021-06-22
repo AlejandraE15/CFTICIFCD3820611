@@ -1,85 +1,47 @@
 # Lab 12: Enhancing a web application by using the Azure Content Delivery Network
-![architecture_12](ZZ-lab/Architecture_12.png)
+![architecture_12](ZZ-lab/architecture_12.png)
 
-## Exercise 1: Create Azure resources
+### Exercise 1: Create Azure resources
 ![Lab1200](ZZ-lab/Lab1200.png)
 
-### Crear una Store Account dentro de un Resource Group llamado Serverless. 
-![Lab0200](ZZ-lab/Lab0200.png)
-
-### Crear una Function App. 
-![Lab0201](ZZ-lab/Lab0201.png)
-### Connection String Key 1:
+* Properties URL de mi web app.
 
 ```
-DefaultEndpointsProtocol=https;AccountName=funcstorgeoconda;AccountKey=2Y+fcKbyCujCLFrR4hjgXIk9pQbEmS0yEiaMdOYNxxaiFNwxamJfvKPgDI55yne/JbJson00nar1PrqoEvG3aA==;EndpointSuffix=core.windows.net
+http://landingpagegeoconda.azurewebsites.net/
 ```
+### Exercise 2: Configure Content Delivery Network and endpoints 
+* Compruebo que el provedor Microsoft.CDN no este creado.
+![Lab01201](ZZ-lab/Lab1201.png)
 
+* Registro mi nuevo proveedor.
+![Lab1202](ZZ-lab/Lab1202.png)
 
-### Configure local Azure Functions project.
-![Lab0203](ZZ-lab/Lab0203.png)
+* Creo un CDN profile.
+![Lab1203](ZZ-lab/Lab1203.png)
 
-*Codigo usado par configurar la cadena de conexión*
-```
-{
-    "IsEncrypted": false,
-    "Values": {
-        "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=funcstorgeoconda;AccountKey=2Y+fcKbyCujCLFrR4hjgXIk9pQbEmS0yEiaMdOYNxxaiFNwxamJfvKPgDI55yne/JbJson00nar1PrqoEvG3aA==;EndpointSuffix=core.windows.net",
-        "FUNCTIONS_WORKER_RUNTIME": "dotnet"
-    }
-}
-```
+* En mi grupo de recursos creo dos contenedores llamados media y video.
+![Lab1204](ZZ-lab/Lab1204.png)
 
-### Crear una HTTP-triggered function
-![Lab0204](ZZ-lab/Lab0204.png)
-### Escribir un HTTP-triggered function code
-![Lab0205](ZZ-lab/Lab0205.png)
+* Dentro de mi CDN profile agrego 3 Endpoint, basados en mis 2 contenedores y mi web app.
+![Lab1205](ZZ-lab/Lab1205.png)
 
-### Test the HTTP-triggered function by using httprepl
-![Lab0206](ZZ-lab/Lab0206.png)
-![Lab0207](ZZ-lab/Lab0207.png)
-### Create a function that triggers on a schedule
-![Lab0208](ZZ-lab/Lab0208.png)
+### Exercise 3: Upload and configure static web content
 
-*Codigo usado para la task 4: Update the function integration configuration*
-```
-using System;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
-using Microsoft.Extensions.Logging;
+* Observo mi pagina web, la cual aun no tiene contenido. 
+![Lab1206](ZZ-lab/Lab1206.png)
 
-namespace func
-{
-    public static class Recurring
-    {
-         [FunctionName("Recurring")]
-         public static void Run([TimerTrigger("*/30 * * * * *")]TimerInfo myTimer, ILogger log)
-        {
-            log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
-        }
-    }
-}
-```
+* En mi contenedor llamado media, subo unas imágenes jpd de mi práctica.
+![Lab1207](ZZ-lab/Lab1207.png)
 
-![Lab0209](ZZ-lab/Lab0209.png)
+* Por otra lado en mi contenedor llamado video, también subo un archivo mp4 .
+![Lab1208](ZZ-lab/Lab1208.png)
 
-### Crear una función que se integre con otros servicios.
+* Configuro en los ajustes de mi Web app, añadiendo 2 aplicaciones con los valores de los contenedores creados anteriormente.
+![Lab1209](ZZ-lab/Lab1209.png)
 
-*Subir un archivo en un contenedor nuevo llamado content, dentro de mi funcstorgeoconda*
-![Lab0210](ZZ-lab/Lab0210.png)
-*Crear una HTTP-triggered function.
-![Lab0211](ZZ-lab/Lab0211.png)
-*Escribri una HTTP-triggered a blob-inputted function code*
-![Lab0212](ZZ-lab/Lab0212.png)
-*Registrar extensiones de blob de Azure Storage*
-![Lab0213](ZZ-lab/Lab0213.png)
+* Compruebo que mis archivos se hayan subido a mi página web.
+![Lab1210](ZZ-lab/Lab1210.png)
 
-*Test de la funcion usando httprepl*
-![Lab0214](ZZ-lab/Lab0214.png)
-*código httprepl*
-![Lab0215](ZZ-lab/Lab0215.png)
-*Publish the function app project*
-![Lab0216](ZZ-lab/Lab0216.png)
-### Validate deployment
-![Lab0217](ZZ-lab/Lab0217.png)
-![Lab02018](ZZ-lab/Lab02018.png)
+### Exercise 4: Use Content Delivery Network endpoints
+
+*
