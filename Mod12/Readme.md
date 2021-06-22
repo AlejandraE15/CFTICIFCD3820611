@@ -44,4 +44,32 @@ http://landingpagegeoconda.azurewebsites.net/
 
 ### Exercise 4: Use Content Delivery Network endpoints
 
-*
+* Pruebo mi contenido multimedia con los siguientes enlaces y si funcionan.
+
+![Lab1211](ZZ-lab/Lab1211.png)
+```
+https://cdnmediageoconda.azureedge.net/campus.jpg
+```
+![Lab1212](ZZ-lab/Lab1212.png)
+```
+https://cdnmediageoconda.azureedge.net/conference.jpg
+```
+![Lab1213](ZZ-lab/Lab1213.png)
+```
+https://cdnmediageoconda.azureedge.net/poster.jpg
+```
+![Lab1214](ZZ-lab/Lab1214.png)
+```
+https://cdnvideogeoconda.azureedge.net/welcome.mp4
+```
+* Actualizo las configuraciones de mi aplicación web con los calores sacados de mi CDN profile de media y video.
+![Lab1215](ZZ-lab/Lab1215.png)
+
+* Finalmente corroboro que mi pagina fucniona correctamente con el enlace de mi CDNweb.
+![Lab1216](ZZ-lab/Lab1216.png)
+
+
+
+
+
+
