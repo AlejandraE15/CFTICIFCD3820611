@@ -1,5 +1,5 @@
 # Lab 11: Monitoring services that are deployed to Azure
-![architecture_11](ZZ-lab/architecture_11.png)
+![architecture_11](ZZ-lab/Architecture_11.png)
 
 ### Exercise 1: Create and configure Azure resources
 
@@ -14,13 +14,13 @@
 
 ### Exercise 2: Monitor a local web application by using Application Insights
 * Build a .NET Web API project
-![Lab01103](ZZ-lab/Lab1203.png)
+![Lab01103](ZZ-lab/Lab1103.png)
 
 * Registro mi nuevo proveedor.
-![Lab1104](ZZ-lab/Lab1204.png)
+![Lab1104](ZZ-lab/Lab1104.png)
 
 * Creo un CDN profile.
-![Lab1105](ZZ-lab/Lab1205.png)
+![Lab1105](ZZ-lab/Lab1105.png)
 
 ### Exercise 3: Upload and configure static web content
 
@@ -28,7 +28,7 @@
 ![Lab1106](ZZ-lab/Lab1106.png)
 
 * En mi contenedor llamado media, subo unas imágenes jpd de mi práctica.
-![Lab1207](ZZ-lab/Lab1207.png)
+![Lab1207](ZZ-lab/Lab1107.png)
 
 * Por otra lado en mi contenedor llamado video, también subo un archivo mp4 .
 ![Lab1108](ZZ-lab/Lab1108.png)
@@ -55,7 +55,7 @@ https://cdnmediageoconda.azureedge.net/conference.jpg
 ```
 https://cdnmediageoconda.azureedge.net/poster.jpg
 ```
-![Lab1114](ZZ-lab/Lab111  4.png)
+![Lab1114](ZZ-lab/Lab11144.png)
 ```
 https://cdnvideogeoconda.azureedge.net/welcome.mp4
 ```
