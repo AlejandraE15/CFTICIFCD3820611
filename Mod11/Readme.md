@@ -45,7 +45,7 @@ private const string INSTRUMENTATION_KEY = "a5cdd414-c892-45d5-a0da-ac57c7dacf48
 ![Lab1106](ZZ-lab/Lab1106.png)
 ![Lab1207](ZZ-lab/Lab1107.png)
 ![Lab1108](ZZ-lab/Lab1108.png)
-
+![Lab119](ZZ-lab/Lab119.png)
 * Compruebo que los datos se han subido a mi API service.
 ![Lab1109](ZZ-lab/Lab1109.png)
 
@@ -56,16 +56,12 @@ private const string INSTRUMENTATION_KEY = "a5cdd414-c892-45d5-a0da-ac57c7dacf48
 * En mi navegador abro el enlace de mi App Service, agregando /weatherforecast para que funcione bien y no marque error.
 ![Lab1112](ZZ-lab/Lab1112.png)
 
-* Visualización de métricas en tiempo real en Application Insights
+* Obtener métricas actualizadas en Application Insights
 ![Lab1113](ZZ-lab/Lab1113.png)
 
-### 
-
-
-
-
-
+* Visualización de métricas en tiempo real en Application Insights
 ![Lab1114](ZZ-lab/Lab11144.png)
+
 ![Lab1115](ZZ-lab/Lab1115.png)
 
 ![Lab1116](ZZ-lab/Lab1116.png)
