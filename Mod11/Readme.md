@@ -3,64 +3,69 @@
 
 ### Exercise 1: Create and configure Azure resources
 
-* Creo una Application Insights resource
+* Creo una Application Insights resource y  una App Service.
 ![Lab1100](ZZ-lab/Lab1100.png)
-
-* Creo una App Service.
 ![Lab1101](ZZ-lab/Lab1101.png)
 
-* Configuración de las opciones de escalado automático de aplicaciones web
+* Configuración de las opciones de escalado automático de mi Web app.
 ![Lab1102](ZZ-lab/Lab1102.png)
 
 ### Exercise 2: Monitor a local web application by using Application Insights
 * Build a .NET Web API project
 ![Lab01103](ZZ-lab/Lab1103.png)
 
-* Registro mi nuevo proveedor.
+* Dentro de mi carpeta Startup.cs del proyecto que cree, le agrego este codigo a mi Startup class, asi como tambíen modifico el CopnfigureServices, agregandole otra linea de codigo.
+```
+private const string INSTRUMENTATION_KEY = "a5cdd414-c892-45d5-a0da-ac57c7dacf48";
+```
+```
+ public void ConfigureServices(IServiceCollection services)
+        {
+
+            services.AddControllers();
+
+            services.AddApplicationInsightsTelemetry(INSTRUMENTATION_KEY);
+            
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SimpleApi", Version = "v1" });
+            });
+        }
+```
+* Hechas las modificaciones, uso el comando dotnet build y dotnet run-.
+
 ![Lab1104](ZZ-lab/Lab1104.png)
 
-* Creo un CDN profile.
+* Abro una nueva ventana y compruebo que funciona.
 ![Lab1105](ZZ-lab/Lab1105.png)
 
-### Exercise 3: Upload and configure static web content
-
-* Observo mi pagina web, la cual aun no tiene contenido. 
+### Exercise 3: Monitor a web app using Application Insights
+ 
+ * Implementación de una aplicación en la web app
 ![Lab1106](ZZ-lab/Lab1106.png)
-
-* En mi contenedor llamado media, subo unas imágenes jpd de mi práctica.
 ![Lab1207](ZZ-lab/Lab1107.png)
-
-* Por otra lado en mi contenedor llamado video, también subo un archivo mp4 .
 ![Lab1108](ZZ-lab/Lab1108.png)
 
-* Configuro en los ajustes de mi Web app, añadiendo 2 aplicaciones con los valores de los contenedores creados anteriormente.
+* Compruebo que los datos se han subido a mi API service.
 ![Lab1109](ZZ-lab/Lab1109.png)
 
-* Compruebo que mis archivos se hayan subido a mi página web.
+* Configurar la recopilación de métricas en profundidad para la Web app.
 ![Lab1210](ZZ-lab/Lab1110.png)
-
-### Exercise 4: Use Content Delivery Network endpoints
-
-* Pruebo mi contenido multimedia con los siguientes enlaces y si funcionan.
-
 ![Lab1111](ZZ-lab/Lab1111.png)
-```
-https://cdnmediageoconda.azureedge.net/campus.jpg
-```
+
+* En mi navegador abro el enlace de mi App Service, agregando /weatherforecast para que funcione bien y no marque error.
 ![Lab1112](ZZ-lab/Lab1112.png)
-```
-https://cdnmediageoconda.azureedge.net/conference.jpg
-```
+
+* Visualización de métricas en tiempo real en Application Insights
 ![Lab1113](ZZ-lab/Lab1113.png)
-```
-https://cdnmediageoconda.azureedge.net/poster.jpg
-```
+
+### 
+
+
+
+
+
 ![Lab1114](ZZ-lab/Lab11144.png)
-```
-https://cdnvideogeoconda.azureedge.net/welcome.mp4
-```
-* Actualizo las configuraciones de mi aplicación web con los calores sacados de mi CDN profile de media y video.
 ![Lab1115](ZZ-lab/Lab1115.png)
 
-* Finalmente corroboro que mi pagina fucniona correctamente con el enlace de mi CDNweb.
 ![Lab1116](ZZ-lab/Lab1116.png)
