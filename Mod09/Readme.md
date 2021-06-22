@@ -14,7 +14,7 @@
 ![Lab0903](ZZ-lab/Lab0903.png)
 
 * Observo el evento de validación de mi suscripción.
-![Lab1104](ZZ-lab/Lab1104.png)
+![Lab0904](ZZ-lab/Lab0904.png)
 
 ### Exercise 3: Publish Event Grid events from .NET
 * Creo un .NET project
