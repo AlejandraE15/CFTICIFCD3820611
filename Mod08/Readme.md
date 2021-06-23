@@ -19,7 +19,7 @@ http://httpapigeoconda.azurewebsites.net/
 ![Lab0803](ZZ-lab/Lab0803.png)
 
 * Seleciono Echo Headers y busco Backend, lo edito pàra agregar un nuevo valor.
-![Lab0804](ZZ-lab/Lab0904.png)
+![Lab0804](ZZ-lab/Lab0804.png)
 
 * Estos son los resultados de mi API creada.
 ![Lab0805](ZZ-lab/Lab0805.png)
@@ -30,7 +30,7 @@ http://httpapigeoconda.azurewebsites.net/
 *  En esta ultima operación creada  agrego una  nueva politica donde tendré que editar el código, quedando de esta manera:
 ![Lab0807](ZZ-lab/Lab0807.png)
 * Compruebo que al cambiar el código se cree un formato .JSON
-![Lab0808](ZZ-lab/Lab08080png)
+![Lab0808](ZZ-lab/Lab08080.png)
 * Por último, observo el contenido del Backend y del Outbound.
 ![Lab0809](ZZ-lab/Lab0810.png)
 ![Lab0809](ZZ-lab/Lab0811.png)
