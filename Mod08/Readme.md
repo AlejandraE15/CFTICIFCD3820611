@@ -1,5 +1,5 @@
 # Lab 08: Creating a multi-tier solution by using services in Azure
-![architecture_08](ZZ-lab/Architecture_08.png)
+![architecture_08](ZZ-lab/Architecture.png)
 
 ### Exercise 1: Creating an Azure App Service resource by using a Docker container image
 * Creo un grupo de recurso junto con una Api Service, 
