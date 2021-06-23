@@ -3,11 +3,11 @@
 
 ## Exercise 1: Create Azure resources
 * Creo un grupo de recurso en el cual tenga, una cuenta de almacenamiento, una Key Vault y una function app, dentro de la cual tendré una Application Insights.
-![Lab0700](ZZ-lab/Lab0700.png)
+![Lab0701](ZZ-lab/Lab0701.png)
 
 
 ## Exercise 2: Configure secrets and identities
-![Lab0701](ZZ-lab/Lab0701.png)
+
 * Observo en mi web app, que el Event Grid ya se visualiza. 
 ![Lab0702](ZZ-lab/Lab0702.png)
 
