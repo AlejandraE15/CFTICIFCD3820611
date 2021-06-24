@@ -45,11 +45,77 @@
 
  ```
 
-https://hrtopicgeoconda.eastus-1.eventgrid.azure.net/api/events
+* Así mismo, en el código del archivo FilePArser.cs que he creado antes, lo modifico:
+ ```
+ using Microsoft.AspNetCore.Mvc;
+ using Microsoft.Azure.WebJobs;
+ using Microsoft.AspNetCore.Http;
+ using System;
+ using System.Threading.Tasks;
 
-Access Key 1 :
-KgHrASIfUpVvRMDcqzXYNW4/MZY8JpLMhpyxBswUZeM=
-```
+ public static class FileParser
+ {
+     [FunctionName("FileParser")]
+     public static async Task<IActionResult> Run(
+         [HttpTrigger("GET")] HttpRequest request)
+     {
+         string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
+         return new OkObjectResult(connectionString);
+     }
+ }
+
+ ```
+ * Validar la función local
 ![Lab0706](ZZ-lab/Lab0706.png)
-* Finalmente observo como aparecen mis nuevas publicaciones.
 ![Lab0707](ZZ-lab/Lab0707.png)
+* Implementar usando las herramientas principales de Azure Functions.
+![Lab0708](ZZ-lab/Lab0708.png)
+* Test the Key Vault-derived application setting
+![Lab0709](ZZ-lab/Lab0709.png)
+## Exercise 4: Access Azure Blob Storage data
+* Cargar un blob de almacenamiento de muestra y lo pongo público.
+![Lab0710](ZZ-lab/Lab0710.png)
+URL blob:
+ ```
+https://securestorgeoconda.blob.core.windows.net/drop/records.json
+ ```
+* Test. 
+![Lab0711](ZZ-lab/Lab0711.png)
+* Cambio el access level a privado y este será el resultado.
+![Lab0712](ZZ-lab/Lab0712.png)
+* Pull and configure the Azure SDK for .NET
+![Lab0713](ZZ-lab/Lab0713.png)
+* Vuelvo a escribir código de Azure Blob Storage con el SDK de Azure para .NET
+ ```
+ using Azure.Storage.Blobs;
+ using Microsoft.AspNetCore.Mvc;
+ using Microsoft.Azure.WebJobs;
+ using Microsoft.AspNetCore.Http;
+ using System;
+ using System.Threading.Tasks;
+
+public static class FileParser
+{
+    
+    [FunctionName("FileParser")]
+    public static async Task<IActionResult> Run(
+        [HttpTrigger("GET")] HttpRequest request)
+        {
+            string connectionString = Environment.GetEnvironmentVariable("StorageConnectionString");
+            BlobClient blob = new BlobClient(connectionString, "drop", "records.json");
+            var response = await blob.DownloadAsync();
+            return new FileStreamResult(response?.Value?.Content, response?.Value?.ContentType);
+        }
+ }
+ ```
+ * Deploy and validate the Azure Functions app
+![Lab0714](ZZ-lab/Lab0714.png)
+* Observo los resultados de mi test run.
+![Lab0715](ZZ-lab/Lab0715.png)
+
+
+
+
+
+
+
